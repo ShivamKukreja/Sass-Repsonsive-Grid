@@ -123,7 +123,15 @@ $grid-map: (
   }
 }
 .container {
-  max-width: $grid__bp-xl * 1px;
+  max-width: 100%;
+  // @each $modifier, $breakpoint in $grid-map {
+  //   @if ($modifier != '') {
+  //     @include create-mq($breakpoint, 'min') {
+  //       max-width: $breakpoint * 1px;
+  //     }
+  //   }
+  // }
+  // max-width: $grid__bp-xl * 1px;
   margin: 0 auto;
   &--fluid {
     max-width: 100%;
